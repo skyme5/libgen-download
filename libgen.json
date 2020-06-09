@@ -1,0 +1,81 @@
+{
+  "archive": "DOWNLOADER_LIBGEN_ARCHIVE.txt",
+  "downloadLocation": "g:/Documents/Books/LIBGEN",
+  "templates": {
+    "filename": "[%<author>s]_%<title>s_(%<year>s)_[%<identifier>s]%<ext>s"
+  },
+  "logging": {
+    "downloaded": "%s already downloaded in the archive",
+    "downloadBookError": "Error to download book %s",
+    "downloadBookStart": "Downloading book %s",
+    "requestWebpage": "Downloading webpage %s",
+    "requestWebpageError": "Error retriving webpage %s",
+    "downloadHost": "Using Libgen Host %s",
+    "downloadHostEmpty": "No more host to use"
+  },
+  "hosts": [
+    "http://93.174.95.29/main/%s",
+    "https://libgen.lc/ads.php?md5=%s",
+    "http://booksdescr.org/ads.php?md5=%s"
+  ],
+  "api": {
+    "host": "",
+    "jsonPath": "http://gen.lib.rus.ec/json.php?ids=%s&fields=%s",
+    "bibPath": "http://gen.lib.rus.ec/book/bibtex.php?md5=%s",
+    "logging": {
+      "requestAPI": "Making API call %s%s",
+      "requestAPIError": "Error making API call %s%s"
+    },
+    "fields": [
+      "aich",
+      "asin",
+      "author",
+      "bookmarked",
+      "city",
+      "cleaned",
+      "color",
+      "commentary",
+      "coverurl",
+      "crc32",
+      "ddc",
+      "doi",
+      "dpi",
+      "edition",
+      "edonkey",
+      "extension",
+      "filesize",
+      "generic",
+      "googlebookid",
+      "id",
+      "identifier",
+      "issn",
+      "issue",
+      "language",
+      "lbc",
+      "lcc",
+      "library",
+      "local",
+      "locator",
+      "md5",
+      "openlibraryid",
+      "orientation",
+      "pages",
+      "paginated",
+      "periodical",
+      "publisher",
+      "scanned",
+      "searchable",
+      "series",
+      "sha1",
+      "timeadded",
+      "timelastmodified",
+      "title",
+      "topic",
+      "tth",
+      "udc",
+      "visible",
+      "volumeinfo",
+      "year"
+    ]
+  }
+}

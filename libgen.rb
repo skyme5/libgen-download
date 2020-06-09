@@ -1,8 +1,4 @@
 #!/usr/bin/ruby
-# @Author: Aakash Gajjar
-# @Date:   2019-06-18 18:09:06
-# @Last Modified by:   Sky
-# @Last Modified time: 2019-09-02 23:37:50
 
 require 'net/http'
 require 'net/https'
@@ -13,7 +9,6 @@ require 'nokogiri'
 require 'unirest'
 require 'lisbn'
 require 'http'
-
 require 'tty-logger'
 
 class String
@@ -34,6 +29,7 @@ class BookDownloader
         'host' => 'http://booksdescr.org', 'path' => '/ads.php?md5=%{md5}'
       },
     }
+
 
     @BOOK_API_FIELDS = %w[
       aich
